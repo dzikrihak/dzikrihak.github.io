@@ -1,0 +1,5 @@
+baseURL = 'https://dzikrihak.github.io/'
+languageCode = 'en-us'
+title = 'Dzikri H'
+paginate = 5
+theme = 'PaperMod'
