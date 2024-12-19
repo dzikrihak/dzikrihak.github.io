@@ -1,4 +1,4 @@
-baseURL = 'https://dzikrihak.github.io/'
+baseURL = 'http://dzikri.my.id/'
 languageCode = 'en-us'
 title = 'Dzikri H'
 paginate = 5
