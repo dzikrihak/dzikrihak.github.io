@@ -1,4 +1,4 @@
-baseURL = 'http://dzikri.my.id/'
+baseURL = 'https://dzikri.my.id/'
 languageCode = 'en-us'
 title = 'Dzikri H'
 paginate = 5
