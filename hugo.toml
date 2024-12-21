@@ -1,5 +1,86 @@
 baseURL = 'https://dzikri.my.id/'
 languageCode = 'en-us'
-title = 'Dzikri H'
 paginate = 5
+title = 'Home'
+copyright = "© 2024 Dzikri "
 theme = 'PaperMod'
+
+[params]
+  ShowReadingTime = true
+
+  [params.profileMode]
+    enabled = true
+    title = 'Dzikri Hakim'
+    subtitle = 'This blog is my space to share knowledge dan experinces in software development, data analyst/engineering.'
+    imageUrl = "https://i.ibb.co.com/wQbxpFR/picofme-1.png"
+    imageTitle = "<title of image as alt>"
+    imageWidth = 197
+    imageHeight = 198
+    [[params.profileMode.buttons]]
+    name = "Archive"
+    url = "/archive"
+        
+    [[params.profileMode.buttons]]
+    name = "Posts"
+    url = "/posts"
+
+[[params.socialIcons]]
+name = "Github"
+url = "https://github.com"
+
+[[params.socialIcons]]
+name = "Instagram"
+url = "https://instagram.com/"
+
+[[params.socialicons]]
+name = "Linkedin"
+url = "https://linkedin.com/"
+
+[[params.socialicons]]
+name = "Youtube"
+url = "https://youtube.com/"
+
+
+
+
+
+
+
+# ------------------------------
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 10
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 10
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 10
+
+
+
+# --------------------------------------
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+# ---------------------------------------
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
