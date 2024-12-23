@@ -1,4 +1,5 @@
 +++
+ShowReadingTime = false
 +++
 
 # About Me

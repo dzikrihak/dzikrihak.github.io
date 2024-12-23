@@ -4,41 +4,47 @@ paginate = 5
 title = 'Home'
 copyright = "© 2024 Dzikri "
 theme = 'PaperMod'
+ShowToc = true
 
 [params]
   ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks= true
+  ShowCodeCopyButtons= true
 
-  [params.profileMode]
-    enabled = true
-    title = 'Dzikri Hakim'
-    subtitle = 'This blog is my space to share knowledge dan experinces in software development, data analyst/engineering.'
-    imageUrl = "https://i.ibb.co.com/wQbxpFR/picofme-1.png"
-    imageTitle = "<title of image as alt>"
-    imageWidth = 197
-    imageHeight = 198
-    [[params.profileMode.buttons]]
-    name = "Archive"
-    url = "/archive"
-        
+[params.profileMode]
+  enabled = true
+  title = 'Dzikri Hakim'
+  subtitle = 'This blog is my space to share knowledge dan experinces'
+  imageUrl = "https://i.ibb.co.com/wQbxpFR/picofme-1.png"
+  imageTitle = "<title of image as alt>"
+  imageWidth = 197
+  imageHeight = 198
+
     [[params.profileMode.buttons]]
     name = "Posts"
     url = "/posts"
 
-[[params.socialIcons]]
-name = "Github"
-url = "https://github.com"
+    [[params.profileMode.buttons]]
+    name = "Series"
+    url = "/series"
 
-[[params.socialIcons]]
-name = "Instagram"
-url = "https://instagram.com/"
 
 [[params.socialicons]]
-name = "Linkedin"
-url = "https://linkedin.com/"
+name = "linkedin"
+url = "https://linkedin.com"
 
 [[params.socialicons]]
-name = "Youtube"
+name = "youtube"
 url = "https://youtube.com/"
+
+[[params.socialicons]]
+name = "github"
+url = "https://github.com/"
+
+[[params.socialicons]]
+name = "instagram"
+url = "https://instagram.com/"
 
 
 
@@ -56,9 +62,9 @@ url = "https://youtube.com/"
     url = "/about/"
     weight = 10
   [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
     weight = 10
   [[menu.main]]
     identifier = "archives"
