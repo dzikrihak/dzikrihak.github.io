@@ -1,10 +1,9 @@
 baseURL = 'https://dzikri.my.id/'
 languageCode = 'en-us'
-paginate = 5
 title = 'Home'
 copyright = "© 2024 Dzikri "
 theme = 'PaperMod'
-ShowToc = true
+#ShowToc = true
 
 [params]
   ShowReadingTime = true
@@ -15,7 +14,7 @@ ShowToc = true
 [params.profileMode]
   enabled = true
   title = 'Dzikri Hakim'
-  subtitle = 'This blog is my space to share knowledge dan experinces'
+  subtitle = 'This blog is my space to share knowledge dan experinces.'
   imageUrl = "https://i.ibb.co.com/wQbxpFR/picofme-1.png"
   imageTitle = "<title of image as alt>"
   imageWidth = 197

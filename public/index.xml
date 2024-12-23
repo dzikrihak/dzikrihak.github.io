@@ -59,7 +59,12 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;</description>
+      <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;
+&lt;p&gt;I am &lt;strong&gt;Dzikri Hakim&lt;/strong&gt;,
+I am passionate about software development, data enthusiast, automation, techno&lt;/p&gt;
+&lt;h1 id=&#34;skills&#34;&gt;Skills&lt;/h1&gt;
+&lt;h1 id=&#34;projects&#34;&gt;Projects&lt;/h1&gt;
+&lt;h1 id=&#34;language&#34;&gt;Language&lt;/h1&gt;</description>
     </item>
   </channel>
 </rss>
