@@ -2,16 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/articles/article-pertama/</loc>
+    <lastmod>2024-12-26T17:31:57+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/articles/</loc>
+    <lastmod>2024-12-26T17:31:57+07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-12-22T17:00:38+07:00</lastmod>
+    <lastmod>2024-12-26T17:31:57+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/python/</loc>
+    <lastmod>2024-12-24T21:50:15+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/python-1/</loc>
+    <lastmod>2024-12-24T21:50:15+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/</loc>
+    <lastmod>2024-12-24T21:50:15+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/reviews/</loc>
+    <lastmod>2024-12-24T19:00:52+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/reviews/reviews-2/</loc>
+    <lastmod>2024-12-24T19:00:52+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/reviews/reviews-1/</loc>
+    <lastmod>2024-12-24T19:00:44+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/eigh-post/</loc>
+    <lastmod>2024-12-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-12-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
     <lastmod>2024-12-22T17:00:38+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/my-six-post/</loc>
-    <lastmod>2024-12-20T20:39:54+07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2024-12-20T20:39:54+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/my-fifth-post/</loc>
@@ -36,8 +63,6 @@
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
-  </url><url>
-    <loc>http://localhost:1313/series/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url>

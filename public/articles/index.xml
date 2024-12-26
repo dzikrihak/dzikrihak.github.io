@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Dzikri Hakim</title>
+    <link>http://localhost:1313/articles/</link>
+    <description>Recent content in Articles on Dzikri Hakim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Dec 2024 17:31:57 +0700</lastBuildDate><atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Article Pertama</title>
+      <link>http://localhost:1313/articles/article-pertama/</link>
+      <pubDate>Thu, 26 Dec 2024 17:31:57 +0700</pubDate>
+      
+      <guid>http://localhost:1313/articles/article-pertama/</guid>
+      
+      <description>&lt;h2 id=&#34;pengenalan&#34;&gt;Pengenalan&lt;/h2&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

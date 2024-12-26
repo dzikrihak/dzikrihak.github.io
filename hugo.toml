@@ -1,91 +1,102 @@
+title = "Dzikri Hakim"
 baseURL = 'https://dzikri.my.id/'
+
+# This is what goes in <html lang="">
 languageCode = 'en-us'
-title = 'Home'
-copyright = "© 2024 Dzikri "
-theme = 'PaperMod'
-#ShowToc = true
+
+# This defines how dates are formatted
+#defaultContentLanguage = "en-gb"
+
+# Enable emojis globally
+enableEmoji = true
+ignoreErrors = ["additional-script-loading-error"] # ignore error of loading additional scripts.
+
+# traditional way: theme component resides in directory 'themes' 
+theme = "hugo-blog-awesome"
+
+[services]
+# To enable Google Analytics 4 (gtag.js) provide G-MEASUREMENT_ID below.
+# To disable Google Analytics, simply leave the field empty or remove the next two lines
+  [services.googleAnalytics]
+    id = '' # G-MEASUREMENT_ID
+
+# To enable Disqus comments, provide Disqus Shortname below.
+# To disable Disqus comments, simply leave the field empty or remove the next two lines
+  [services.disqus]
+    shortname = ''
+
+# set markup.highlight.noClasses=false to enable code highlight
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+	[markup.tableOfContents]
+		startLevel = 2 # ToC starts from H2
+		endLevel = 4 # ToC ends at H4
+		ordered = false # generates <ul> instead of <ol>
 
 [params]
-  ShowReadingTime = true
-  ShowBreadCrumbs = true
-  ShowPostNavLinks= true
-  ShowCodeCopyButtons= true
-
-[params.profileMode]
-  enabled = true
-  title = 'Dzikri Hakim'
-  subtitle = 'This blog is my space to share knowledge dan experinces.'
-  imageUrl = "https://i.ibb.co.com/wQbxpFR/picofme-1.png"
-  imageTitle = "<title of image as alt>"
-  imageWidth = 197
-  imageHeight = 198
-
-    [[params.profileMode.buttons]]
-    name = "Posts"
-    url = "/posts"
-
-    [[params.profileMode.buttons]]
-    name = "Series"
-    url = "/series"
-
-
-[[params.socialicons]]
-name = "linkedin"
-url = "https://linkedin.com"
-
-[[params.socialicons]]
-name = "youtube"
-url = "https://youtube.com/"
-
-[[params.socialicons]]
-name = "github"
-url = "https://github.com/"
-
-[[params.socialicons]]
-name = "instagram"
-url = "https://instagram.com/"
-
-
-
-
-
-
-
-# ------------------------------
+sitename = "Dzikri Hakim"
+defaultColor = "light"
+description = "Just Another web blog"
+mainSections = ["articles"]
+math = true
+toc = true
+tocOpen = false 
+goToTop = true 
+enableEmoji = true
+additionalScripts = ['js/custom.js', 'js/custom-2.js']
+dateFormat = "" 
 
 [menu]
-
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
+    pageRef = "/"
+    name = 'Home'
+    url = '/'
     weight = 10
   [[menu.main]]
-    identifier = "projects"
-    name = "Projects"
-    url = "/projects/"
-    weight = 10
+    pageRef="articles"
+    name = 'Articles'
+    url = '/articles/'
+    weight = 20 
   [[menu.main]]
-    identifier = "archives"
-    name = "Archives"
-    url = "/archives/"
-    weight = 10
-  [[menu.main]]
-    identifier = "search"
-    name = "Search"
-    url = "/search/"
-    weight = 10
+    pageRef = "about"
+    name = 'About'
+    url = '/about/'
+    weight = 30
+
+[params.author]
+  avatar = 'avatar.png'
+  intro = "Dzikri Hakim"
+  name = "Dzikri"
+  description = "This blog is My space to share knowledge and experinces."
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/dzikrihak"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://linkedin.com/"
+
+[[params.socialIcons]]
+name = "threads"
+url = "https://threads.com/dzikrihak"
+
+[[params.socialIcons]]
+name = "instagram"
+url = "https://instagram.com/dzikrihak"
 
 
 
-# --------------------------------------
+
+# Allow to override `browserconfig.xml` params (configuration for windows embedded browsers)
+[params.browserconfig]
+  TileColor = "#2d89ef" # default windows 10 blue tile color
+
 
 [taxonomies]
-category = "categories"
-tag = "tags"
-series = "series"
-
-# ---------------------------------------
-
-[outputs]
-home = [ "HTML", "RSS", "JSON" ]
+    category = "categories"
+    tag = "tags"
+    series = "series"

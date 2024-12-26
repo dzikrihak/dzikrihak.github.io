@@ -1,23 +1,24 @@
-
-{{ if .Param "series" }} {{ $currentPage := .Page.Permalink }} {{ $name := index
-.Params.series 0 }}
-<p>
-  <i
-    >This article is a part of the series "<a href="/series/{{$name | urlize }}"
-      >{{$name}}</a
-    >."</i
-  >
-</p>
-<p>Other articles in the series:</p>
-{{ $name := $name | urlize }} {{ $series := index .Site.Taxonomies.series $name
-}}
-<ul class="series">
-  {{ range sort $series.Pages "Date" }}
-  <li>
-    {{ if ne $currentPage .Permalink }}
-    <a href="{{.Permalink}}">{{.LinkTitle}}</a>
-    {{ else }}<b>{{.LinkTitle}}</b>{{ end }}
-  </li>
-  {{end}}
-</ul>
-{{end}}
+{{ define "main" }}
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">{{ .Title }}</h1>
+                {{ $configDateFormat := .Site.Params.dateFormat | default ":date_medium" }}
+                {{ with .Date }}
+                {{ $ISO_time := dateFormat "2006-01-02T15:04:05-07:00" . }}
+                <div class="post-meta">
+                    <time datetime="{{ $ISO_time }}" itemprop="datePublished"> {{ . | time.Format $configDateFormat }} </time>
+                </div>
+                {{ end }}
+            </header>
+            {{ partial "toc.html" .}}
+            {{ partial "series.html" .}}
+            <div class="page-content">
+                {{ .Content }}
+            </div>
+        </article>
+        {{- partial "comments.html" . -}}
+    </main>
+</div>
+{{ end }}
